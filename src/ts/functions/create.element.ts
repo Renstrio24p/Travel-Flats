@@ -7,10 +7,14 @@ export const Create_Element = () => {
     let isLoggedIn: boolean
     isLoggedIn = true;
 
+    function FormatPricesComma(value: number):string {
+        return value.toLocaleString();
+    }
+
     function showDetails(authorityStatus: (boolean | Permissions), element : HTMLDivElement, price: number): void {
         if (authorityStatus) {
             const priceDisplay = document.createElement('div')
-            priceDisplay.innerHTML = '&#8369;' + price.toString() + '/night'
+            priceDisplay.innerHTML = '&#8369;' + FormatPricesComma(price) + '/night'
             element.appendChild(priceDisplay)
         }
     }
