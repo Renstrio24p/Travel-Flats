@@ -1,0 +1,21 @@
+{
+  "name": "standalone-typescript-vite",
+  "version": "1.0.3",
+  "description": "Vanilla typescript",
+  "main": "vite.config.ts",
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "sass": "^1.64.1",
+    "vite": "^4.4.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite",
+    "build": "vite build",
+    "view": "vite preview",
+    "start-host": "vite --host"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

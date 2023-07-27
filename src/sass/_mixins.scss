@@ -1,0 +1,31 @@
+
+@mixin Desktop1920x1080 {
+    .footer {
+        position: absolute;
+    }
+}
+
+@mixin Laptop1366x768 {
+    .footer {
+        position: relative;
+    }
+}
+
+@mixin Mobile {
+    .card {
+        width: 90%;
+    }
+}
+
+@mixin Smaller-Mobile {
+    .card {
+        width: 40%;
+    }
+}
+
+@mixin Small-Phones {
+    .card {
+        flex-direction: column;
+        width: 90%;
+    }
+}

@@ -1,0 +1,138 @@
+@import '../mixins';
+
+body {
+    color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+}
+
+.container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    width: 100%;
+}
+
+.nav-bar {
+    width: 100%;
+    position: sticky;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+    width: 46px;
+    margin: 20px;
+}
+
+.user-container {
+    margin: 20px;
+}
+
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.card img {
+    width: 100%;
+}
+
+.image-flat {
+    height: 120px;
+}
+
+.recommend {
+    padding: 30px 0 10px;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--light-coral);
+    position:relative;
+    bottom:0;
+    text-align: center;
+    padding: 30px 0;
+    color: var(--white);
+    margin-top: auto;
+}
+
+.review-card {
+    padding: 10px;
+}
+
+.reviews {
+    display: flex;
+    padding: 10px;
+}
+
+.break {
+    height: 1px;
+    width: 90%;
+    background-color: var(--coral);
+}
+
+.button {
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 500;
+    box-shadow: var(--box-shadow);
+
+}
+
+.button:hover {
+    background-color: var(--dark-goldenrod);
+    transition: .5s;
+}
+
+.main-image {
+    width: auto;
+}
+
+@media screen and (max-height: 1080px) {
+    @include Desktop1920x1080;
+}
+
+@media screen and (max-height: 768px) {
+    @include Laptop1366x768;
+}
+
+@media screen and (max-width: 526px) {
+
+    @include Mobile;
+    
+}
+
+@media screen and (max-width: 633px) {
+    
+    @include Smaller-Mobile;
+}
+
+@media screen and (max-width: 451px) {
+
+    @include Small-Phones;
+    
+}
