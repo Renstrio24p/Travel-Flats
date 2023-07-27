@@ -1,0 +1,34 @@
+var R=Object.defineProperty;var $=(e,t,i)=>t in e?R(e,t,{enumerable:!0,configurable:!0,writable:!0,value:i}):e[t]=i;var m=(e,t,i)=>($(e,typeof t!="symbol"?t+"":t,i),i);(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))n(o);new MutationObserver(o=>{for(const r of o)if(r.type==="childList")for(const a of r.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&n(a)}).observe(document,{childList:!0,subtree:!0});function i(o){const r={};return o.integrity&&(r.integrity=o.integrity),o.referrerPolicy&&(r.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?r.credentials="include":o.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function n(o){if(o.ep)return;o.ep=!0;const r=i(o);fetch(o.href,r)}})();function D(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var M={exports:{}};/*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/(function(e){(function(){var t={}.hasOwnProperty;function i(){for(var n=[],o=0;o<arguments.length;o++){var r=arguments[o];if(r){var a=typeof r;if(a==="string"||a==="number")n.push(this&&this[r]||r);else if(Array.isArray(r))n.push(i.apply(this,r));else if(a==="object"){if(r.toString!==Object.prototype.toString&&!r.toString.toString().includes("[native code]")){n.push(r.toString());continue}for(var c in r)t.call(r,c)&&r[c]&&n.push(this&&this[c]||c)}}}return n.join(" ")}e.exports?(i.default=i,e.exports=i):window.classNames=i})()})(M);var A=M.exports;const U=D(A),T="_container_7cktf_8",F="_logo_7cktf_29",H="_properties_7cktf_39",N="_card_7cktf_45",P="_recommend_7cktf_60",k="_footer_7cktf_64",j="_reviews_7cktf_79",q="_button_7cktf_90",s={container:T,"nav-bar":"_nav-bar_7cktf_19",logo:F,"user-container":"_user-container_7cktf_35",properties:H,card:N,"image-flat":"_image-flat_7cktf_56",recommend:P,footer:k,"review-card":"_review-card_7cktf_75",reviews:j,break:"_break_7cktf_84",button:q,"main-image":"_main-image_7cktf_107"},E=new Set;function h(){let e;do e=Math.random().toString(36).substring(2);while(E.has(e));return E.add(e),e}var C=(e=>(e.ADMIN="admin",e.READ_ONLY="read-only",e))(C||{}),l=(e=>(e.GOLD_USER="Gold_User",e.SILVER_USER="Silver_User",e.BRONZE_USER="Bronze_User",e))(l||{});function z(e,t,i){const n=l.GOLD_USER?"⭐":"";L&&(L.innerHTML=e.toString()+" review"+I(e)+" | last reviewed by.  "+t+" "+n)}function G(e,t){e&&(w&&(w.innerHTML="back"),S&&(S.innerHTML=t))}function I(e){return e>1||e===0?"s":""}function B(e){return e.sort((i,n)=>n.stars-i.stars).slice(0,2)}const Z=()=>{function e(i){return i.toLocaleString()}function t(i,n,o){if(i){const r=document.createElement("div");r.innerHTML="&#8369;"+e(o)+"/night",n.appendChild(r)}}for(let i=0;i<f.length;i++){const n=document.createElement("card");n.classList.add(`${s.card}`),n.innerHTML=f[i].title;const o=document.createElement("img");o.setAttribute("src",f[i].image),o.setAttribute("alt","flat image"),o.classList.add(`${s["image-flat"]}`),n.appendChild(o),y==null||y.appendChild(n),t(b.permissions,n,f[i].price)}};class x{constructor(t,i,n){m(this,"src");m(this,"title");m(this,"reviews");this.src=t,this.title=i,this.reviews=n}}const b={FirstName:"Bobby",LastName:"brown",permissions:C.ADMIN,isReturning:!0,age:35,stayedAt:["Florida-Home","Oman-Flat","Tokyo-bungalow"]};let L,w,S,y,p,d,v,u,g,_,V=new x("travel/flats/italian-property.jpg","Cozzy French",[{name:"Olive",stars:5,loyaltyUser:l.GOLD_USER,date:"12-04-2023"}]),f;const Y=()=>{L=document.querySelector("#reviews"),w=document.querySelector("#returning-user"),S=document.querySelector("#user"),y=document.querySelector(`.${s.properties}`),v=document.querySelector(`.${s.reviews}`),p=document.querySelector(`.${s.container}`),d=document.querySelector("button"),u=document.querySelector("#footer"),g=document.querySelector(`.${s["main-image"]}`),_=document.createElement("img"),_.setAttribute("src",V.src),g==null||g.appendChild(_);const e=[{name:"Sheia",stars:5,loyaltyUser:l.GOLD_USER,date:"01-04-2021"},{name:"Andrzej",stars:3,loyaltyUser:l.BRONZE_USER,date:"28-03-2021"},{name:"Omar",stars:4,loyaltyUser:l.SILVER_USER,date:"27-03-2021"}];f=[{image:"travel/flats/flat1.jpg",title:"Cozzy Suites",price:15e3,Location:{FirstLine:"Light Mall Plaza",City:"Mandaluyong",ZipCode:1550,Country:"Philippines"},ContactDetails:[6392323232323,"abc@gmail.com"],Availabletorent:!0},{image:"travel/flats/flat2.jpg",title:"Suites Apartment",price:8e3,Location:{FirstLine:"Glaza Homes Flats",City:"Taguig",ZipCode:1555,Country:"Philippines"},ContactDetails:[639454545455,"dreg4@outlook.com"],Availabletorent:!1},{image:"travel/flats/flat3.jpg",title:"Laz Mall Green",price:9e3,Location:{FirstLine:"Evergreen Fields",City:"Cavite",ZipCode:9555,Country:"Philippines"},ContactDetails:[63945454545,"mariamia34@xyz.com"],Availabletorent:!0},{image:"travel/flats/flat5.jpg",title:"Malia Hotel",price:35e3,Location:{FirstLine:"Room 4",City:"Malia",ZipCode:45334,Country:"Malaysia"},ContactDetails:[60349822083,"lee34@gmail.com"],Availabletorent:!1}],G(b.isReturning,b.FirstName),z(e.length,e[0].name,e[0].loyaltyUser),Z();let t=0;function i(o){if(!t){t++;const r=B(o);for(let a=0;a<r.length;a++){const c=document.createElement("card");c.classList.add(`${s["review-card"]}`),c.innerHTML="&nbsp;"+r[a].stars+" stars from "+r[a].name+" ",v==null||v.appendChild(c)}d&&(p==null||p.removeChild(d))}}d&&d.addEventListener("click",()=>i(e));let n;n=["Manila","10:47",24],!n||!u?u&&(u.innerHTML="Undefined"):u.innerHTML=n[0]+" "+n[1]+" "+n[2]+"deg celcius"};function K(e){e.innerHTML=`
+
+    <div class="${s["nav-bar"]}">
+        <div>
+            <img src='travel/sofa-logo.png' alt='sofa logo' class="${s.logo}" />
+        </div>
+        <h3 class="${s["user-container"]}">Welcome
+            <span id="returning-user"></span>
+            <span id="user"></span>
+        </h3>
+    </div>
+
+    <div class="${s.container}">
+        <div class="${s["main-image"]}"></div>
+        <h5 id="reviews"></h5>
+        <button class='${s.button}'>Get reviews</button>
+        <div class="${s.reviews}"></div>        
+         <div class="${s.break}"></div>
+         
+        <h3 class='${s.recommend}'>Other Properties recommended to you:</h3> 
+        <div class="${s.properties}"></div>
+    </div>
+
+    <div class='${s.footer}' id='footer'></div>
+
+    `,Y()}function W(){const e=document.getElementById("container"),t=document.getElementById("travel");window.addEventListener("DOMContentLoaded",()=>{e==null||e.setAttribute("id",h()),t==null||t.setAttribute("id",h())}),t&&K(t)}U.bind(s);function J(e){e.innerHTML=`
+            <div id='container'>
+                <travelpage id='travel'></travelpage>
+            </div>
+    `,W()}const O=document.querySelector("#app");O.id=h();J(O);
