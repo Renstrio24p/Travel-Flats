@@ -4,6 +4,10 @@ Scrimba Project typescript
 - Advanced Styling
 - Typescript Types are very sensitive on declaring types.
 
+Project Template 
+
+- Standalone - Typescript Vite
+
 ## Pure Vanilla Typescript ECMAScript 10
 
 Standalone Typescript - is a tool where it can renders the same thing as react and my previous Standalone-Typescript structure with Major differences since JS is a Imperative Style.
